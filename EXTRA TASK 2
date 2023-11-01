@@ -1,0 +1,16 @@
+#include<iostream>
+
+using namespace std;
+int main()
+{
+	int n = 1;
+	do
+	{
+	    cout<<" "<<n;
+        n=n*2;
+        
+	} while (n <= 512);
+	cout << endl;
+	system("pause");
+	return 0;
+}
