@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,j;
+	int i = 0;
+	int octal[100];
+	cout << "\nDECIMAL NUMBER: ";
+	cin >> n;
+	if (n == 0)
+	{
+		cout << "\nOCTAL EQUVILANT: 0"<<endl;
+		system("pause");
+		return 0;
+
+	}
+	do
+	{
+		octal[i] = n % 8;
+		i++;
+		n = n / 8;
+	} while (n >= 8);
+	
+	j = i - 1;
+	cout << "\nOCTAL EQUVILANT: ";
+	cout << n;
+	do
+	{
+		cout << octal[j];
+		j--;
+	} while (j >= 0);
+	cout << endl << endl;
+	system("pause");
+	return 0;
+}
