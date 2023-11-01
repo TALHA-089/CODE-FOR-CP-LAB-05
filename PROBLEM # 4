@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float num1, num2, answer;
+	char op,choice;
+	do 
+	{
+		cout << "\nEnter first number,operation,and second number: ";
+		cin >> num1 >> op >> num2;
+		switch (op)
+		{
+		  case '+':
+			         answer = num1 + num2;
+			         cout << "\nAnswer= " << answer;
+			         break;
+		  case'-':
+			         answer = num1 - num2;
+			         cout << "\nAnswer= " << answer;
+					 break;
+		  case'*':
+			         answer = num1 * num2;
+			         cout << "\nAnswer= " << answer;
+			         break;
+		  case'/':
+			         answer = num1 / num2;
+			         cout << "\nAnswer= " << answer;
+			         break;
+
+		} 
+		cout << "\n\nDo another(y/n)?";
+		cin >> choice;
+
+	} while (choice == 'y' || choice != 'n');
+	cout << endl << endl;
+	system("pause");
+	return 0;
+}
