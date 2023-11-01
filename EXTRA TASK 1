@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n=0;
+	do 
+	{
+		n = n + 7;
+		cout <<" "<< n;
+	} while (n < 98);
+	cout << endl;
+	system("pause");
+	return 0;
+}
